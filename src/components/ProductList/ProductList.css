@@ -1,0 +1,16 @@
+.productList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 -35px;
+}
+
+@media screen and (max-width: 480px) {
+  .productList {
+    flex-direction: column;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+}

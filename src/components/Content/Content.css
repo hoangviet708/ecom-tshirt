@@ -1,0 +1,50 @@
+.content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  margin: 0 80px;
+}
+
+.title {
+  justify-content: center;
+  display: flex;
+  position: relative;
+  font-size: 80px;
+}
+
+.title .line-title {
+  width: 560px;
+  height: 10px;
+  background-color: tomato;
+  position: absolute;
+  bottom: 19px;
+  z-index: -1;
+}
+
+@media screen and (max-width: 480px) {
+  .content {
+    margin: 0;
+  }
+
+  .title {
+    justify-content: center;
+    display: flex;
+    position: relative;
+    font-size: 50px;
+  }
+
+  .title .line-title {
+    width: 350px;
+    height: 5px;
+    background-color: tomato;
+    position: absolute;
+    bottom: 12px;
+    z-index: -1;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .content {
+    margin: 0 40px;
+  }
+}

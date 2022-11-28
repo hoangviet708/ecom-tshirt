@@ -1,0 +1,50 @@
+.custom-radios {
+  display: flex;
+}
+
+.custom-radios .radio-item {
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-radios input[type="radio"] {
+  display: none;
+}
+
+.custom-radios label {
+  display: block;
+  color: #333;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.custom-radios label span {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin: -1px 4px 0 0;
+  vertical-align: middle;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.33);
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  line-height: 30px;
+}
+
+.custom-radios label span img {
+  height: 11px;
+  opacity: 0;
+  transition: all 0.2s ease;
+}
+
+.custom-radios input[type="radio"]:checked + label span img {
+  opacity: 1;
+}
