@@ -195,7 +195,7 @@ input[type="number"]::-webkit-outer-spin-button {
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px) and (min-width: 481px) {
   .navbar-right .navbar-login {
     margin-left: 20px;
   }
